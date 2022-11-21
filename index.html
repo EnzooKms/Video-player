@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css here only when ccs is not imported in js yet -->
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- <script src="./js/app.js" type="module"></script> -->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Hello</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <video id="yt" controls>
+      <source id="src" src="./public/MisterV.mp4" type="video/mp4">
+    </video>
+
+    <div id="inputs">
+      <input type="button" value="back 10s" id="back">
+      <input type="button" value="skip 10s" id="skip">
+      <input type="button" value="reset" id="reset">
+
+      <div id="timerBg">
+        <div id="timer"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>
